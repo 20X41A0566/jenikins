@@ -1,0 +1,21 @@
+pipeline {
+agent any
+Stages{
+Stage('Integrate')
+{
+Echo"integrating the code"
+}
+Stage('validate')
+{
+Echo"validating the code"
+}
+Stage('compile')
+{
+Echo"compiling the code'
+}
+Stage('Deployment')
+{
+Echo"deploying the code"
+}
+}
+}
